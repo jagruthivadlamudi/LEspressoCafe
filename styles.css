@@ -372,9 +372,10 @@ footer {
 }
 
 /* --------------------------------------------------
-   ABOUT PAGE
-   Keeps the same L'Espresso palette while giving the
-   About page a wider editorial layout.
+   CSS ESSENTIAL TRAINING ASSIGNMENT - ABOUT PAGE
+   This page uses Flexbox for the navigation and CSS Grid
+   for the main two-column layout (profile + content).
+   The layout is kept in this external stylesheet.
 -------------------------------------------------- */
 
 .about-page header {
@@ -390,6 +391,7 @@ footer {
     margin: 4px 0 12px;
 }
 
+/* Flexbox keeps the About-page navigation links in a row. */
 .about-page nav {
     margin-top: 10px;
     gap: 0;
@@ -416,6 +418,7 @@ footer {
     box-shadow: none;
 }
 
+/* CSS Grid creates space for the profile and written content. */
 .about-main {
     max-width: 1250px;
     margin: 0 auto;
@@ -532,6 +535,7 @@ footer {
     letter-spacing: 1px;
 }
 
+/* Responsive layout: stack the Grid columns on smaller screens. */
 @media (max-width: 850px) {
     .about-main {
         grid-template-columns: 1fr;
